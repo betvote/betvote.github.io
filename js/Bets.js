@@ -44,22 +44,22 @@ $.getJSON("https://blockchain.info/multiaddr?cors=true&api_code=0fe3c82d-156d-40
 	var bet_f = (total_balance_candidates / balance_f * profit) / (6 / 100 * 2.11);
     
 	if (bet_a < 1) {
-		bet_a = 1.01;
+		bet_a = 1;
 	}
 	if (bet_b < 1) {
-		bet_b = 1.01;
+		bet_b = 1;
 	}
 	if (bet_c < 1) {
-		bet_c = 1.01;
+		bet_c = 1;
 	}
 	if (bet_d < 1) {
-		bet_d = 1.01;
+		bet_d = 1;
 	}
 	if (bet_e < 1) {
-		bet_e = 1.01;
+		bet_e = 1;
 	}
 	if (bet_f < 1) {
-		bet_f = 1.01;
+		bet_f = 1;
 	}																				
 
 	var bet_a_html = bet_a.toFixed(2)+" X";
