@@ -1,0 +1,352 @@
+<!DOCTYPE>
+<html>
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" pcontent="Apostá por los candidatos a Presidente de la Nación Argentina en 2015" />
+	    <meta name="author" content="">
+		<meta name="keywords" pcontent="propuestas, candidatos, partidos, frentes, elecciones, 2015, presidente, argentina" />	    
+		<link rel="apple-touch-icon" sizes="57x57" href="img/ico/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="img/ico/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/ico/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/ico/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/ico/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/ico/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/ico/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/ico/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="img/ico/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/ico/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="img/ico/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/ico/favicon-16x16.png">
+		<link rel="manifest" href="img/ico/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="img/ico/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<meta property="og:image" content="http://i.imgur.com/frpwqwO.png" />
+		<meta property="og:title" content="BetVote.net | Apuestas electorales con Bitcoins"/>
+		<meta property="og:url" content="http://www.betvote.net"/>
+		<meta property="og:site_name" content="BetVote.net | Apostá tu voto"/>
+		<meta property="og:description" content="Apostá por los candidatos a Presidente de la Nación Argentina en 2015"/>
+		<meta property="og:type" content="website"/>	    
+		<title>Apuestas electorales - betvote.net</title>
+	    <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">		
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic,400italic">
+		<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Anton'>
+	    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Raleway:400,300,700'>
+		<link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	    <link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">		
+		<link rel="stylesheet" type="text/css" href="css/demo.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/custom.css">		
+		<noscript>
+		    <link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
+		</noscript>			
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="https://apis.google.com/js/client.js"></script>		
+	    <!--<script type="text/javascript" src="js/jquery.min.js"></script>-->
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+		<script type="text/javascript" src="js/Utilities.js"></script>
+		<script type="text/javascript" src="js/Clases.js"></script>
+		<script type="text/javascript" src="js/Templates.js"></script>
+		<script type="text/javascript" src="js/Candidatos.js"></script>
+		<script type="text/javascript" src="js/Partidos.js"></script>
+		<script type="text/javascript" src="js/Bets.js"></script>				
+		<script type="text/javascript" src="js/Propuestas.js"></script>
+		<script type="text/javascript" src="js/javascript.js"></script>
+		<script type="text/javascript" src="js/jquery.ba-hashchange.js"></script>	
+	    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!--[if lt IE 9]>
+	      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+		<script language="javascript" type="application/javascript">
+			$(document).ready(function(e) {
+				CargarCandidatos();
+				CargarPartidos();
+			    CargarPropuestas();
+				candidatos = shuffle(candidatos);
+			    partidos = shuffle(partidos);
+				CargarSeccion();
+				CargarBets();
+				window.location.onhashchange =  function (event, data) {
+			        CargarSeccion();
+				};
+			});
+			function load()
+			{
+			    //Get your own Browser API Key from  https://code.google.com/apis/console/
+			    gapi.client.setApiKey('AIzaSyBq8cgwmzcjrwp2tRKFVgV8_IY6PuQHIhU');
+			    gapi.client.load('urlshortener', 'v1',function(){document.getElementById("shortener").innerHTML="";});
+			}
+			window.onload = load;
+		</script>
+		<script type="text/javascript">var GETSOCIAL_ID = "d679e9";var GETSOCIAL_LANG = "en"; (function() { var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true; po.src = 'https://api.at.getsocial.io/widget/v1/gs_async.js?id='+GETSOCIAL_ID; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s); })();
+		</script>    
+	</head>
+	<body data-spy="scroll" data-offset="0" data-target="#theMenu">
+		<a href="/"><img class="bet_logo" src="IMG/logo.png"></a>
+		<a href="/"><img class="bet_logo_responsive" src="IMG/logo_responsive.png"></a>
+		<!-- Menu -->
+		<nav class="menu" id="theMenu">
+			<div class="menu-wrap">
+				<h1 class="logo"><a href="index.html#home">Betvote</a></h1>
+				<i class="fa fa-remove menu-close"></i>
+				<a href="#bet" class="smoothScroll">¿CÓMO APOSTAR?</a>
+				<a href="#btc" class="smoothScroll">¿QUÉ ES BITCOIN?</a>
+				<a href="#about" class="smoothScroll">ACERCA DE BETVOTE</a>
+				<a href="http://www.facebook.com/betvote.net" target="_blank"><i class="fa fa-facebook"></i></a>
+				<a href="http://www.twitter.com/betvotenet" target="_blank"><i class="fa fa-twitter"></i></a>
+				<a href="http://www.github.com/betvote" target="_blank"><i class="fa fa-github"></i></a>
+			</div>	
+			<!-- Menu button -->
+			<div id="menuToggle"><i class="fa fa-reorder"></i></div>
+		</nav>
+	    <div class="container-slider demo-1">
+	        <div id="slider" class="sl-slider-wrapper">
+	            <div class="sl-slider">
+
+               
+	                <div id="MauricioMacri" class="sl-slide bg-3" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+	                    <div class="sl-slide-inner">
+	                        <div class="deco" data-icon=""></div>
+	                        <blockquote><p><b class="bet1J6LQKpcYTN5EEs9Ly1sEmNbWx6MFZ4NVT"></b></p></blockquote>
+	                    </div>
+	                </div>
+
+	                <div id="SergioMassa" class="sl-slide bg-12" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+	                    <div class="sl-slide-inner">
+	                        <div class="deco" data-icon=""></div>
+	                        <blockquote><p><b class="bet1NbYpjej4tUG1LoXNcaHXEAv2BrNaE3Qn8"></b></p></blockquote>
+	                    </div>
+	                </div>
+                    
+
+
+	                <div id="DanielScioli" class="sl-slide bg-7" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+	                    <div class="sl-slide-inner">
+	                        <div class="deco" data-icon=""></div>
+	                        <blockquote><p><b class="bet1MKxXQvNjS78WaeZniUBKB5hbGwDSPzBTt"></b></p></blockquote>
+	                    </div>
+	                </div>                                
+
+	                <div id="NicolásdelCaño" class="sl-slide bg-6" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+	                    <div class="sl-slide-inner">
+	                        <div class="deco" data-icon=""></div>
+	                        <blockquote><p><b class="bet14ABDAcQ5vXQkKpmNHZfzEb8Ki1Thrr7gy"></b></p></blockquote>
+	                    </div>
+	                </div>
+
+	                <div id="MargaritaStolbizer" class="sl-slide bg-10" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+	                    <div class="sl-slide-inner">
+	                        <div class="deco" data-icon=""></div>
+	                        <blockquote><p><b class="bet15idxQtkbpox9xKDQGxqjoqiqpWMEeTwgJ"></b></p></blockquote>
+	                    </div>
+	                </div>  
+                                        
+
+
+	                <div id="AdolfoRodríguezSaá" class="sl-slide bg-4" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+	                    <div class="sl-slide-inner">
+	                        <div class="deco" data-icon=""></div>
+	                        <blockquote><p><b class="bet1KnApPxStmyPds8ngsbPm8KFDRB2Rcvt9r"></b></p></blockquote>
+	                    </div>
+	                </div>
+
+	            </div><!-- /sl-slider -->
+	            <nav id="nav-arrows" class="nav-arrows">
+	                <span class="nav-arrow-prev">Previous</span>
+	                <span class="nav-arrow-next">Next</span>
+	            </nav>
+	            <nav id="nav-dots" class="nav-dots">
+	                <span class="nav-dot-current"></span>
+	                <span></span>
+	                <span></span>
+	                <span></span>
+	                <span></span>
+	                <span></span>                              
+	            </nav>
+	        </div><!-- /slider-wrapper -->
+	    </div><!-- /container demo-1-->
+		<!-- ========== WHITE SECTION ========== -->
+		<div id="w">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<h3>BIENVENIDO A <bold>BETVOTE</bold>, <bold>EL PRIMER SITIO DE APUESTAS ELECTORALES CON BITCOINS</bold> EN ARGENTINA.</h3>
+					</div>
+				</div>
+			</div><!-- /container -->
+		</div><!-- /w -->
+
+		
+
+
+
+		<div id="contenido" class="mainContainer">
+
+
+
+
+
+
+
+	    	<div class="contentContainer">
+	        </div>
+	        <div class="getsocial gs-inline-group"></div>
+	    </div>
+	    <div style="display:none;" id="shortener"></div>	     	
+		<!-- ========== SERVICES - GREY SECTION ========== -->
+		<section id="services" name="bet"></section>
+		<div id="g">
+			<div class="container">
+				<div class="row">
+					<h3><b>¿Cómo apostar?</b></h3>
+					<br>
+					<br>
+					<div class="col-lg-3 faq-btc">
+						<img src="img/btc/bitcoin12.png" class="how-to">
+						<h4><b>Hazte de bitcoins</b></h4>
+						<p>Puedes comprar bitcoins de forma fácil, segúra, rápida, y con pesos argentinos en <a href="https://www.ripio.com/es/" target="_blank"><b>Ripio</b></a>, <a href="https://bitex.la/" target="_blank"><b>Bitex</b></a>, <a href="https://localbitcoins.com/country/AR" target="_blank"><b>Local Bitcoins</b></a> y <a href="https://satoshitango.com" target="_blank"><b>Satoshi Tango</b>.</a><br>
+							
+						</p>
+					</div>
+					<div class="col-lg-3 faq-btc">
+						<img src="img/btc/bitcoin22.png" class="how-to">
+						<h4><b>Elije a tu candidato</b></h4>
+						<p>Por coeficiente de apuesta (X), plataforma electoral, afinidad ideológica, probabilidades de ganar, valores, prontuario, etc.</p>
+					</div>
+					<div class="col-lg-3 faq-btc">
+						<img src="img/btc/bitcoin63.png" class="how-to">
+						<h4><b>Envia tu apuesta</b></h4>
+						<p>Puedes utilizar el QR o la bitaddress de cada candidato. No hay montos mínimos ni máximos. <b style="color: #ff005a">NO UTILICES DIRECCIONES DE "ÚNICA VEZ"</b>.</p>
+					</div>
+					<div class="col-lg-3 faq-btc">
+						<img src="img/btc/bitcoin18.png" class="how-to">
+						<h4><b>Ganadores</b></h4>
+						<p>Si resultas ganador, el premio (apuesta x coeficiente de apuesta al momento de la transacción) te será enviado a la dirección de origen.</p>
+					</div>
+					<div style="margin-top:20px;">
+						<p><a href="https://bitcoin.org/es/debes-saber" target="_blank"><b style="color: #ff005a;">Algunas cosas que debes saber a la hora de apostar con bitcoins.</b></a></p>
+					</div>
+				</div>
+			</div><!-- /container -->
+		</div><!-- /g -->
+		<!-- ========== WHITE SECTION ========== -->
+		<div id="w" name="btc">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<h3><bold>¿</bold>QUÉ ES BITCOIN<bold>?</bold>
+						</h3>
+					<br>
+					<div class="about_btc col-lg-12">
+						<p>Bitcoin es el principio de algo verdaderamente necesario: <b>una moneda sin gobierno, una sociedad sin estado.</b></p>
+					</div>
+					<div id="container_yt_bet" class="row">
+										<div class="col-lg-12">
+						<iframe id="yt_bet" width="100%" height="315" src="https://www.youtube.com/embed/-nWtqqG7Qp4?controls=0" frameborder="0" allowfullscreen style="max-width:560px"></iframe>
+					</div>
+					</div>
+					<div class="about_btc col-lg-12">
+						<p style="margin-top:15px;"><b>Si quieres aprender como empezar a usar Bitcoin visita: <a href="https://bitcoin.org/es/como-empezar" target="_blank">Bitcoin.org</a>, <a href="https://www.acamica.com/cursos/47/bitcoin-en-espanol" target="_blank">Bitcoin en Español en Acamica</a> y  <a href="https://www.facebook.com/groups/BitcoinArg/" target="_blank">Bitcoin-Argentina en Facebook</a>.</b></p>
+					</div>																
+					</div>
+				</div>
+			</div><!-- /container -->
+		</div><!-- /w -->
+		<!-- ========== ABOUT - GREY SECTION ========== -->
+		<section id="about" name="about"></section>
+		<div id="g">
+			<div class="container">
+				<div class="row">
+					<h3 class="about_aux">ACERCA DE BETVOTE</h3>
+					<br>
+					<br>
+					<div class="col-lg-2"></div>
+					<div id="about_bet" class="col-lg-8">
+						<p>Betvote es un experimento que mediante un simple software de lado del cliente conectado mediante API a la tecnologia "Blockchain" intenta analizar el mercado de predicciones electorales de cara a las elecciones presidenciales 2015 en Argentina, a la vez que busca concientizar acerca de la violencia que representa el Estado y su dictadura de mayorías circunstanciales llamada “democracia”.</p>
+						<br>
+						<br>
+					</div>
+				</div>
+			</div><!-- /container -->
+		</div><!-- /g -->
+		<!-- ========== FOOTER SECTION ========== -->
+		<section id="contact" name="contact"></section>
+		<div id="f">
+			<img class="center_div" src="IMG/logo.png">
+			<div class="container">
+				<div class="row">				
+						<div class="col-lg-12">
+							<p class="social_p">
+								<a href="http://www.facebook.com/betvote.net" target="_blank"><i class="fa fa-facebook"></i></a>
+								<a href="http://www.twitter.com/betvotenet" target="_blank"><i class="fa fa-twitter"></i></a>
+								<a href="http://www.github.com/betvote" target="_blank"><i class="fa fa-github"></i></a>
+							</p>
+							<br>
+						</div>
+					</div>
+				</div>
+			</div><!-- /container -->
+		</div><!-- /f -->
+	    <!-- Bootstrap core JavaScript
+	    ================================================== -->
+	    <!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>-->
+		<script type="text/javascript" src="js/classie.js"></script>
+	    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	    <script type="text/javascript" src="js/smoothscroll.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	    <script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+	    <script type="text/javascript" src="js/jquery.slitslider.js"></script>	    
+	    <script type="text/javascript">   
+	        $(function() {       
+	            var Page = (function() {
+	                var $navArrows = $( '#nav-arrows' ),
+	                    $nav = $( '#nav-dots > span' ),
+	                    slitslider = $( '#slider' ).slitslider( {
+	                        onBeforeChange : function( slide, pos ) {
+
+	                            $nav.removeClass( 'nav-dot-current' );
+	                            $nav.eq( pos ).addClass( 'nav-dot-current' );
+
+	                        }
+	                    } ),
+	                    init = function() {
+	                        initEvents();
+	                    },
+	                    initEvents = function() {
+	                        // add navigation events
+	                        $navArrows.children( ':last' ).on( 'click', function() {
+	                            slitslider.next();
+	                            return false;
+	                        } );
+	                        $navArrows.children( ':first' ).on( 'click', function() {
+	                            slitslider.previous();
+	                            return false;
+	                        } );
+	                        $nav.each( function( i ) {
+	                            $( this ).on( 'click', function( event ) {
+	                                var $dot = $( this );
+	                                if( !slitslider.isActive() ) {
+	                                    $nav.removeClass( 'nav-dot-current' );
+	                                    $dot.addClass( 'nav-dot-current' );
+	                                }
+	                                slitslider.jump( i + 1 );
+	                                return false;
+	                            } );
+	                        } );
+	                    };
+	                    return { init : init };
+	            })();
+	            Page.init();
+	        });
+	    </script>
+	</body>
+</html>

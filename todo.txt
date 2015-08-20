@@ -1,0 +1,19 @@
+﻿En el detalle del candidato incluir instrucciones para apostar.
+
+Hacer el CSS en Less y prolijo!
+
+agregar un calculador de la apuesta
+
+agregar un timestampeado a la cotizacion de la apuesta
+
+Acomodar el HEAD, OG, etc.
+
+Agregar nueva logica
+
+chequear los numeros.
+
+Quitar todo el JS que no necesite
+
+Meter Google Analytics si es posible
+
+chequear las address en las class del slider, y demas lugares donde aparezca.
