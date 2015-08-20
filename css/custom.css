@@ -299,7 +299,7 @@
 /* First Slide */
 .demo-1 .bg-1 .sl-slide-inner,
 .demo-1 .bg-1 .sl-content-slice {
-	background-image: url(../IMG/ElisaCarrio.png);
+	background-image: url(../img/ElisaCarrio.png);
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -318,7 +318,7 @@
 /* Second Slide */
 .demo-1 .bg-2 .sl-slide-inner,
 .demo-1 .bg-2 .sl-content-slice {
-	background-image: url(../IMG/ErnestoSanz.png);
+	background-image: url(../img/ErnestoSanz.png);
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -345,7 +345,7 @@
 /* Third Slide */
 .demo-1 .bg-3 .sl-slide-inner,
 .demo-1 .bg-3 .sl-content-slice {
-	background-image: url(../IMG/MauricioMacri.png);
+	background-image: url(../img/MauricioMacri.png);
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -368,16 +368,7 @@
 /* Forth Slide */
 .demo-1 .bg-4 .sl-slide-inner,
 .demo-1 .bg-4 .sl-content-slice {
-	background-image: url(../IMG/AdolfoRodríguezSaa.png);
-	background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
-/* Forth Slide */
-.demo-1 .bg-5 .sl-slide-inner,
-.demo-1 .bg-5 .sl-content-slice {
-	background-image: url(../IMG/JorgeAltamira.png);
+	background-image: url(../img/AdolfoRodríguezSaa.png);
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -386,7 +377,7 @@
 /* Forth Slide */
 .demo-1 .bg-6 .sl-slide-inner,
 .demo-1 .bg-6 .sl-content-slice {
-	background-image: url(../IMG/NicolásdelCaño.png);
+	background-image: url(../img/NicolásdelCaño.png);
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -395,25 +386,7 @@
 /* Forth Slide */
 .demo-1 .bg-7 .sl-slide-inner,
 .demo-1 .bg-7 .sl-content-slice {
-	background-image: url(../IMG/DanielScioli.png);
-	background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
-/* Forth Slide */
-.demo-1 .bg-8 .sl-slide-inner,
-.demo-1 .bg-8 .sl-content-slice {
-	background-image: url(../IMG/FlorencioRandazzo.jpg);
-	background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
-/* Forth Slide */
-.demo-1 .bg-9 .sl-slide-inner,
-.demo-1 .bg-9 .sl-content-slice {
-	background-image: url(../IMG/VíctorDeGennaro.png);
+	background-image: url(../img/DanielScioli.png);
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -422,16 +395,7 @@
 /* Forth Slide */
 .demo-1 .bg-10 .sl-slide-inner,
 .demo-1 .bg-10 .sl-content-slice {
-	background-image: url(../IMG/MargaritaStolbizer.png);
-	background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
-/* Forth Slide */
-.demo-1 .bg-11 .sl-slide-inner,
-.demo-1 .bg-11 .sl-content-slice {
-	background-image: url(../IMG/JoséManueldelaSota.png);
+	background-image: url(../img/MargaritaStolbizer.png);
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -440,16 +404,7 @@
 /* Forth Slide */
 .demo-1 .bg-12 .sl-slide-inner,
 .demo-1 .bg-12 .sl-content-slice {
-	background-image: url(../IMG/SergioMassa.png);
-	background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
-/* Forth Slide */
-.demo-1 .bg-13 .sl-slide-inner,
-.demo-1 .bg-13 .sl-content-slice {
-	background-image: url(../IMG/AlejandroBodart.png);
+	background-image: url(../img/SergioMassa.png);
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;

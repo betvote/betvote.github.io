@@ -48,7 +48,7 @@ function HeaderCandidato(cand)
 
 	var address = document.createElement('div');
 	$(address).addClass('addressCandidato');
-	$(address).html('<a href="btc:'+cand.address+'">'+cand.address+'</a>'+'<br>'+'<a href="btc:'+cand.address+'">'+'<img class="qr_cand" src="IMG/qr/' + cand.address + '.png">'+'</a>');
+	$(address).html('<a href="btc:'+cand.address+'">'+cand.address+'</a>'+'<br>'+'<a href="btc:'+cand.address+'">'+'<img class="qr_cand" src="img/qr/' + cand.address + '.png">'+'</a>');
 	$(cont).append(address);
 
 	var bet = document.createElement('div');
@@ -74,7 +74,7 @@ function HeaderPartido(part)
 	var imagen = document.createElement('div');
 	$(imagen).addClass('imagenPartido_Header');
 	$(imagen).css('background-image', 'url(' + part.imagen + ')');
-	$(imagen).html('<img class="qr_part" src="IMG/qr/' + part.address + '.png">');	
+	$(imagen).html('<img class="qr_part" src="img/qr/' + part.address + '.png">');	
 	var bet = document.createElement('div');
 	$(bet).attr('class', 'bet'+part.address+'');	
 	$(bet).css('color', part.color).css('background-color', '#fff');

@@ -60,7 +60,7 @@ function MostrarCandidato(modo, cand)
 			$(address).addClass('addressCandidato bet_temp');
 			$(address).attr( "data-xbt-address", ""+cand.address+"" );
 			$(address).css('color', cand.color);			
-			$(address).html(cand.address+'<img class="qr_cand" src="IMG/qr/' + cand.address + '.png">');
+			$(address).html(cand.address+'<img class="qr_cand" src="img/qr/' + cand.address + '.png">');
 			$(cont).append(address);
 
 			var bet = document.createElement('div');
@@ -187,7 +187,7 @@ function MostrarPartido(modo, part)
 			$(address).addClass('item').addClass('address');
 			$(address).attr( "data-xbt-address", ""+part.address+"" );
 			$(address).css('color', part.color);
-			//$(address).html('<img class="qr_part" src="IMG/qr/' + part.address + '.png"><br>'+ part.address+'<br>');
+			//$(address).html('<img class="qr_part" src="img/qr/' + part.address + '.png"><br>'+ part.address+'<br>');
 			var bet = document.createElement('div');
 			$(bet).attr('class', 'bet'+part.address+'');
 			$(bet).html(part.bet);
