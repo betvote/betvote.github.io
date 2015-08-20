@@ -296,14 +296,6 @@
 
 /* Custom background colors for slides in first demo */
 
-/* First Slide */
-.demo-1 .bg-1 .sl-slide-inner,
-.demo-1 .bg-1 .sl-content-slice {
-	background-image: url(../img/ElisaCarrio.png);
-	background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
 
 .demo-1 .bg-1 .deco {
 	border-color: #ffffff;
@@ -315,14 +307,6 @@
 	box-shadow: inset 0 0 0 10px #ffffff;
 }
 
-/* Second Slide */
-.demo-1 .bg-2 .sl-slide-inner,
-.demo-1 .bg-2 .sl-content-slice {
-	background-image: url(../img/ErnestoSanz.png);
-	background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
 
 .demo-1 .bg-2 .deco {
 	border-color: #ffffff;
@@ -345,7 +329,7 @@
 /* Third Slide */
 .demo-1 .bg-3 .sl-slide-inner,
 .demo-1 .bg-3 .sl-content-slice {
-	background-image: url(../img/MauricioMacri.png);
+	background-image: url(../img/MauricioMacri.jpg);
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -368,7 +352,7 @@
 /* Forth Slide */
 .demo-1 .bg-4 .sl-slide-inner,
 .demo-1 .bg-4 .sl-content-slice {
-	background-image: url(../img/AdolfoRodríguezSaa.png);
+	background-image: url(../img/AdolfoRodríguezSaa.jpg);
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -377,7 +361,7 @@
 /* Forth Slide */
 .demo-1 .bg-6 .sl-slide-inner,
 .demo-1 .bg-6 .sl-content-slice {
-	background-image: url(../img/NicolásdelCaño.png);
+	background-image: url(../img/NicolásdelCaño.jpg);
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -386,7 +370,7 @@
 /* Forth Slide */
 .demo-1 .bg-7 .sl-slide-inner,
 .demo-1 .bg-7 .sl-content-slice {
-	background-image: url(../img/DanielScioli.png);
+	background-image: url(../img/DanielScioli.jpg);
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -395,7 +379,7 @@
 /* Forth Slide */
 .demo-1 .bg-10 .sl-slide-inner,
 .demo-1 .bg-10 .sl-content-slice {
-	background-image: url(../img/MargaritaStolbizer.png);
+	background-image: url(../img/MargaritaStolbizer.jpg);
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -404,7 +388,7 @@
 /* Forth Slide */
 .demo-1 .bg-12 .sl-slide-inner,
 .demo-1 .bg-12 .sl-content-slice {
-	background-image: url(../img/SergioMassa.png);
+	background-image: url(../img/SergioMassa.jpg);
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;

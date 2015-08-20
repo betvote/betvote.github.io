@@ -5,7 +5,7 @@ function MostrarContenedor(tipo)
 	{
 		case contenedores.CANDIDATOS:
 			template = "<div class='candidatosContainer'>"+
-            	"<div class='title'><b>Candidatos a Presidentes de la Nación</b><br><span class='cluf'><b>APUESTA #BV-AR-001:</b> ¿Quién será el presidente de la República Argentina el 11 de diciembre de 2015?</span></div>"+
+            	"<div class='title'><b>Candidatos a Presidentes de la Nación</b><br><span class='cluf'><b>APUESTA #BV-AR-001:</b> ¿Quién será el presidente de la República Argentina el 1 de enero de 2016?</span></div>"+
 				"</div> ";
 			break;
 		/*	
