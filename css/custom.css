@@ -833,7 +833,7 @@ blockquote {
 	}
 }
 /* TABLETS */
-@media all and (min-width: 768px) and (max-width: 1024px) {
+@media all and (min-width: 768px), all and (max-width: 1024px) {
 	.demo-1 .bg-3 .sl-content-slice {
 		background-image: url(../img/MauricioMacri_me.jpg);
 		background-size: cover;
