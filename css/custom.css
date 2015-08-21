@@ -326,10 +326,73 @@
 	color: #222;
 }
 
+/* SMARTPHONES */
+@media all and (max-width: 768px) {
+	.demo-1 .bg-3 .sl-content-slice {
+		background-image: url(../img/MauricioMacri_lo.jpg);
+	}
+	.demo-1 .bg-4 .sl-content-slice {
+		background-image: url(../img/AdolfoRodríguezSaa_lo.jpg);
+	}
+	.demo-1 .bg-6 .sl-content-slice {
+		background-image: url(../img/NicolásdelCaño_lo.jpg);
+	}
+	.demo-1 .bg-7 .sl-content-slice {
+		background-image: url(../img/DanielScioli_lo.jpg);
+	}
+	.demo-1 .bg-10 .sl-content-slice {
+		background-image: url(../img/MargaritaStolbizer_lo.jpg);
+	}
+	.demo-1 .bg-12 .sl-content-slice {
+		background-image: url(../img/SergioMassa_lo.jpg);
+	}
+}
+/* TABLETS */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+	.demo-1 .bg-3 .sl-content-slice {
+		background-image: url(../img/MauricioMacri_me.jpg);
+	}
+	.demo-1 .bg-4 .sl-content-slice {
+		background-image: url(../img/AdolfoRodríguezSaa_me.jpg);
+	}
+	.demo-1 .bg-6 .sl-content-slice {
+		background-image: url(../img/NicolásdelCaño_me.jpg);
+	}
+	.demo-1 .bg-7 .sl-content-slice {
+		background-image: url(../img/DanielScioli_me.jpg);
+	}
+	.demo-1 .bg-10 .sl-content-slice {
+		background-image: url(../img/MargaritaStolbizer_me.jpg);
+	}
+	.demo-1 .bg-12 .sl-content-slice {
+		background-image: url(../img/SergioMassa_me.jpg);
+	}
+}
+/* DESKTOP */
+@media all and (min-width: 1024px) {
+	.demo-1 .bg-3 .sl-content-slice {
+		background-image: url(../img/MauricioMacri_hi.jpg);
+	}
+	.demo-1 .bg-4 .sl-content-slice {
+		background-image: url(../img/AdolfoRodríguezSaa_hi.jpg);
+	}
+	.demo-1 .bg-6 .sl-content-slice {
+		background-image: url(../img/NicolásdelCaño_hi.jpg);
+	}
+	.demo-1 .bg-7 .sl-content-slice {
+		background-image: url(../img/DanielScioli_hi.jpg);
+	}
+	.demo-1 .bg-10 .sl-content-slice {
+		background-image: url(../img/MargaritaStolbizer_hi.jpg);
+	}
+	.demo-1 .bg-12 .sl-content-slice {
+		background-image: url(../img/SergioMassa_hi.jpg);
+	}
+} 
+
 /* Third Slide */
 .demo-1 .bg-3 .sl-slide-inner,
 .demo-1 .bg-3 .sl-content-slice {
-	background-image: url(../img/MauricioMacri.jpg);
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -352,7 +415,6 @@
 /* Forth Slide */
 .demo-1 .bg-4 .sl-slide-inner,
 .demo-1 .bg-4 .sl-content-slice {
-	background-image: url(../img/AdolfoRodríguezSaa.jpg);
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -361,7 +423,6 @@
 /* Forth Slide */
 .demo-1 .bg-6 .sl-slide-inner,
 .demo-1 .bg-6 .sl-content-slice {
-	background-image: url(../img/NicolásdelCaño.jpg);
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -370,7 +431,6 @@
 /* Forth Slide */
 .demo-1 .bg-7 .sl-slide-inner,
 .demo-1 .bg-7 .sl-content-slice {
-	background-image: url(../img/DanielScioli.jpg);
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -379,7 +439,6 @@
 /* Forth Slide */
 .demo-1 .bg-10 .sl-slide-inner,
 .demo-1 .bg-10 .sl-content-slice {
-	background-image: url(../img/MargaritaStolbizer.jpg);
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -388,7 +447,6 @@
 /* Forth Slide */
 .demo-1 .bg-12 .sl-slide-inner,
 .demo-1 .bg-12 .sl-content-slice {
-	background-image: url(../img/SergioMassa.jpg);
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
