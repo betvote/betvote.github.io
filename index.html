@@ -4,7 +4,7 @@
 	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" pcontent="Apostá por los candidatos a Presidente de la Nación Argentina en 2015" />
-	    <meta name="author" content="">
+	    <meta name="author" content="BV">
 		<meta name="keywords" pcontent="propuestas, candidatos, partidos, frentes, elecciones, 2015, presidente, argentina" />	    
 		<link rel="apple-touch-icon" sizes="57x57" href="img/ico/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="img/ico/apple-icon-60x60.png">
@@ -37,27 +37,27 @@
 		<link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	    <link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="stylesheet" type="text/css" href="css/styles.css">		
-		<link rel="stylesheet" type="text/css" href="css/demo.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/custom.css">		
+	    <link rel="stylesheet" type="text/css" href="css/main.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.min.css">		
+		<link rel="stylesheet" type="text/css" href="css/demo.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.min.css">
+		<link rel="stylesheet" type="text/css" href="css/custom.min.css">		
 		<noscript>
-		    <link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
+		    <link rel="stylesheet" type="text/css" href="css/styleNoJS.min.css" />
 		</noscript>			
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="https://apis.google.com/js/client.js"></script>		
-		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
-		<script type="text/javascript" src="js/Utilities.js"></script>
-		<script type="text/javascript" src="js/Clases.js"></script>
-		<script type="text/javascript" src="js/Templates.js"></script>
-		<script type="text/javascript" src="js/Candidatos.js"></script>
-		<script type="text/javascript" src="js/Partidos.js"></script>
-		<script type="text/javascript" src="js/Bets.js"></script>				
-		<script type="text/javascript" src="js/Propuestas.js"></script>
-		<script type="text/javascript" src="js/javascript.js"></script>
-		<script type="text/javascript" src="js/jquery.ba-hashchange.js"></script>	
+		<script type="text/javascript" src="js/modernizr.custom.79639.min.js"></script>
+		<script type="text/javascript" src="js/Utilities.min.js"></script>
+		<script type="text/javascript" src="js/Clases.min.js"></script>
+		<script type="text/javascript" src="js/Templates.min.js"></script>
+		<script type="text/javascript" src="js/Candidatos.min.js"></script>
+		<script type="text/javascript" src="js/Partidos.min.js"></script>
+		<script type="text/javascript" src="js/Bets.min.js"></script>				
+		<script type="text/javascript" src="js/Propuestas.min.js"></script>
+		<script type="text/javascript" src="js/javascript.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ba-hashchange.min.js"></script>	
 	    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!--[if lt IE 9]>
 	      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -279,10 +279,8 @@
 	                    $nav = $( '#nav-dots > span' ),
 	                    slitslider = $( '#slider' ).slitslider( {
 	                        onBeforeChange : function( slide, pos ) {
-
 	                            $nav.removeClass( 'nav-dot-current' );
 	                            $nav.eq( pos ).addClass( 'nav-dot-current' );
-
 	                        }
 	                    } ),
 	                    init = function() {
