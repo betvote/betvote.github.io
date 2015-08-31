@@ -33,15 +33,15 @@ $.getJSON("https://blockchain.info/multiaddr?cors=true&api_code=0fe3c82d-156d-40
 
 	var total_balance_candidates = balance_a+balance_b+balance_c+balance_d+balance_e+balance_f;
 
-	var profit = 0.80;
+	var profit = 0.9;
 	var satoshi = 100000000;
 
-	var bet_a = (total_balance_candidates / balance_a * profit) / (6 / 100 * 39.8);
-	var bet_b = (total_balance_candidates / balance_b * profit) / (6 / 100 * 34.9);
-	var bet_c = (total_balance_candidates / balance_c * profit) / (6 / 100 * 18.7);
-	var bet_d = (total_balance_candidates / balance_d * profit) / (6 / 100 * 3.31);
-	var bet_e = (total_balance_candidates / balance_e * profit) / (6 / 100 * 3.51);
-	var bet_f = (total_balance_candidates / balance_f * profit) / (6 / 100 * 2.11);
+	var bet_a = (total_balance_candidates / balance_a * profit) / (6 / 100 * 39.3);
+	var bet_b = (total_balance_candidates / balance_b * profit) / (6 / 100 * 31.2);
+	var bet_c = (total_balance_candidates / balance_c * profit) / (6 / 100 * 18.3);
+	var bet_d = (total_balance_candidates / balance_d * profit) / (6 / 100 * 2.2);
+	var bet_e = (total_balance_candidates / balance_e * profit) / (6 / 100 * 4.4);
+	var bet_f = (total_balance_candidates / balance_f * profit) / (6 / 100 * 2.7);
     
 	if (bet_a < 1) {
 		bet_a = 1;
