@@ -21,7 +21,7 @@ $.getJSON("https://blockchain.info/multiaddr?cors=true&api_code=0fe3c82d-156d-40
 
 	var total_balance_candidates = balance_a+balance_b;
 
-	var profit = 0.80;
+	var profit = 0.65;
 	var satoshi = 100000000;
 
 	var bet_a = (total_balance_candidates / balance_a * profit) / (2 / 100 * 25);
