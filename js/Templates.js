@@ -48,7 +48,7 @@ function HeaderCandidato(cand)
 
 	var address = document.createElement('div');
 	$(address).addClass('addressCandidato');
-	$(address).html('<a href="btc:'+cand.address+'">'+cand.address+'</a>'+'<br>'+'<a href="btc:'+cand.address+'">'+'<img class="qr_cand" src="img/qr/' + cand.address + '.png">'+'</a>');
+	$(address).html('<a href="bitcoin:'+cand.address+'">'+cand.address+'</a>'+'<br>'+'<a href="bitcoin:'+cand.address+'">'+'<img class="qr_cand" src="img/qr/' + cand.address + '.png">'+'</a>');
 	$(cont).append(address);
 
 	var bet = document.createElement('div');
